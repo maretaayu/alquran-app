@@ -36,6 +36,16 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      <div className="home-intro">
+        <h2>Selamat datang di Al-Quran App</h2>
+        <p>
+          Jelajahi seluruh surah Al-Qur'an dan temukan jadwal sholat terbaru
+          untuk kota pilihan Anda.
+        </p>
+        <Link to="/jadwal-sholat" className="cta-button">
+          Lihat Jadwal Sholat
+        </Link>
+      </div>
       <h2>Daftar Surah</h2>
       <div className="surah-list">
         {surahs.map((surah) => (
